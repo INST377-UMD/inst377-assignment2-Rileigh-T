@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Dogs Page</title>
+  <link rel="stylesheet" href="dogs.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+
+</head>
+<body>
+    <h1> INST377 - Activities</h1>
+    <nav>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="stocks.html">Stocks</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+      </nav>
+
+    <h2>Dogos!</h2>
+    <div id="carousel" data-simple-slider style="width:1000px; height:500px"></div>
+  <div id="breed-buttons"></div>
+
+  <div id="breed-info" class="hidden">
+    <h3 id="breed-name"></h3>
+    <p id="breed-description"></p>
+    <p><strong>Life Expectancy:</strong> <span id="life-span"></span> years</p>
+  </div>
+
+  <div class="audio-box">
+    <h3>Here are options to navigate audio!</h3>
+    <ul>
+        <li>Say "Hello" — Says hello back</li>
+        <li>Say "Change the Page Color to (color you want)" — Changes background color</li>
+        <li>Say "Navigate to homepage/stocks/dogs" — Goes to that page</li>
+        <li>Load Dog Breed (Dog Breed Name)" - Looks up the dog breed</li>
+    </ul>
+    <button onclick="startAnnyang()">Turn On Audio</button>
+    <button onclick="annyang.abort()">Turn Off Audio</button>
+  </div>
+  <script src="dogs.js"></script>
+</body>
+</html>
